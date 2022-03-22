@@ -15,3 +15,8 @@ c=b[0,3]
 print(c)
 c=44
 print(b)
+
+aaaa=np.arange(15).reshape(3,5)
+bb=aaaa.flatten()
+print(aaaa)
+print(bb)

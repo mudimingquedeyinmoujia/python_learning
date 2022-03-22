@@ -1,6 +1,6 @@
 import torch
 
-x=torch.rand(2,4)
-print(x)
-x=torch.randn(2,4)
-print(x)
+a=torch.rand(199)
+print(a.type())
+b=torch.zeros(199)
+print(b.type())

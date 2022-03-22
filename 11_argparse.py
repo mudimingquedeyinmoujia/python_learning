@@ -7,7 +7,7 @@ parser.add_argument('-nu','--number',default=10,type=int,help="this is the numbe
 parser.add_argument('-nn','--name',default=13,type=int,help="this is the name you need to input")
 parser.add_argument('-a','--age',default=15,type=int,help="this is the age you need to input")
 parser.add_argument('-s','--score',default=16,type=int,help="this is the score you need to input")
-conf=parser.parse_args()
+conf,_=parser.parse_known_args()
 print(type(conf))
 print(conf)
 print("the conf is {} {} {} {}".format(conf.number,conf.name,conf.age,conf.score))

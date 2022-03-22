@@ -13,9 +13,11 @@ print(str_spl3)
 
 # 遍历指定路径下的所有文件夹与文件，以及所有文件夹内的文件，默认从外向内,从上至下深度优先
 # 注意root只可能是文件夹,不可能是文件
-inputdir="E:\Gits\python_learning"
+# inputdir="E:\Gits\python_learning"
+inputdir='./'
 for root,dirs,files in os.walk(inputdir,topdown=True):
     print(root,dirs,files)
+    print(root.split('/')[-1])
     print("--------")
     for i in root.split(inputdir):
         print(i)
